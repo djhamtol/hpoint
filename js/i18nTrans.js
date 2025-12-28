@@ -1,33 +1,32 @@
-$(document).ready(function () {
-console.log(location.href);
-console.log(i18nextHttpBackend);
-console.log(document.baseURI);
+$(function () {
 
+  i18next.use(i18nextHttpBackend).init({
 
-  i18next
-    .use(i18nextHttpBackend)
-    .init({
-      lng: 'en',
-      fallbackLng: 'en',
-      backend: {
-         loadPath:'/{{lng}}.json'
-      }
-    }, function () {
+    lng: 'ko',
+    fallbackLng: 'ko',
+    debug: true,
+    backend: {loadPath: '../i18n/{{lng}}.json'},
+    useDataAttrOptions : true,
 
-      jqueryI18next.init(i18next, $, {
-        useOptionsAttr: true
-      });
+  }, function () {
 
-      $('body').localize();
-      console.log('t(title):', i18next.t('login1'));
+  jqueryI18next.init(i18next, $, {
+    tName:'t'
     });
 
-  $('#sel-lang').on('change', function () {
-    const chosenLng = this.value;
+  $('body').localize();
 
-    i18next.changeLanguage(chosenLng, function () {
-      $('body').localize();
-    });
+  });
+
+$('.global select').on('change', function() {
+
+  const lang = $(this).find('option:selected').val();
+
+  i18next.changeLanguage(lang, function () {
+    $('body').localize();
+
+  });
+
   });
 
 });

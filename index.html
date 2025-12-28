@@ -15,21 +15,18 @@
 
     <script src="js/gsap.min.js"></script>
 
-    <script src="js/i18next-http-backend.min.js"></script>
     <script src="js/i18next.min.js"></script>
-
+    <script src="js/i18next-http-backend.min.js"></script>
     <script src="js/jquery-i18next.min.js"></script>
-
-
     
-    <script src="js/stack.js"></script>
     <script src="js/i18nTrans.js"></script>
+    <script src="js/stack.js"></script>
 </head>
 <body>
     <div class="wrap">
         <header>
             <ul class="pc-util pc-only">
-                <li><a href="#" data-i18n="login">로그인</a></li>
+                <li><a href="#" data-i18n="login">{i18next()}</a></li>
                 <li><a href="#" data-i18n="join">회원가입</a></li>
                 <li><button></button></li>
                 <li></li>
@@ -122,7 +119,7 @@
                         <span class="sr-only">H.Point</span>
                     </a>
                     <ul class="mb-util">
-                        <li><a href="#" class="login" data-i18n="login">로그인</a></li>
+                        <li><a href="#" class="login" data-i18n="login"></a></li>
                         <li><a href="#" class="app-down">APP</a></li>
                         <li>
                             <button class="global">
@@ -187,7 +184,8 @@
                                 <li><a href="#">클럽아디다스</a></li>
                                 <li><a href="#">클럽트래블</a></li>
                                 <li><a href="#">클럽육학다식</a></li>
-                                <li><a href="#">클럽집테리어</a></li>                                <li><a href="#">클럽세이푸디</a></li>
+                                <li><a href="#">클럽집테리어</a></li>                                
+                                <li><a href="#">클럽세이푸디</a></li>
                                 <li><a href="#">클럽디즈니</a></li>
                                 <li><a href="#">아파트클럽</a></li>
                             </ul>
@@ -206,36 +204,5 @@
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function() {
-    i18next.init({
-        lng: 'en', // Set the default language
-        fallbackLng: 'en', // Fallback language if translation is missing
-        backend: {
-            loadPath: 'hpoint/i18n/{{lng}}.json' // Path to your translation files
-    
-        },
-        useDataAttrOptions: true // Enables using data attributes for options
-    }, function(err, t) {
-        // Initialize the jquery-i18next plugin after i18next is ready
-        jqueryI18next.init(i18next, $, {
-            useOptionsAttr: true
-        });
-
-        // Apply translations to the entire page
-        $('body').localize();
-    });
-});
-
-
-$('#sel-lang').on('change', function() {
-    const chosenLng = $(this).find('option:selected').attr('value');
-    i18next.changeLanguage(chosenLng, function() {
-        // Re-apply localization after the language is changed
-        $('body').localize();
-    });
-});
-
-    </script>
 </body>
 </html>
