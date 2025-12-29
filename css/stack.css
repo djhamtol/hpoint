@@ -117,6 +117,7 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     right: -100%;
     padding: 0 20px;
     width: 100%;
+    max-width: 500px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -227,20 +228,21 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     background-position: right center;
 }
 
-#mb-menu-area #mb-gnb {
+#mb-menu-area .mb-gnb {
+    
     margin-top: 30px;
     padding: 0 20px 30px 20px;
 }
 
-#mb-menu-area #mb-gnb > ul {
+#mb-menu-area .mb-gnb > ul {
     position: relative;
 }
 
-#mb-menu-area #mb-gnb > ul > li.depth1 {
+#mb-menu-area .mb-gnb > ul > li.depth1 {
     margin-top: 30px;
 }
 
-#mb-menu-area #mb-gnb > ul > li.depth1 span {
+#mb-menu-area .mb-gnb > ul > li.depth1 span {
     position: relative;
     font-family: "HGGGothicssi";
     font-weight: 800;
@@ -248,12 +250,12 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     color: #111;
 }
 
-#mb-menu-area #mb-gnb > ul > li.depth1.active span {
+#mb-menu-area .mb-gnb > ul > li.depth1.active span {
     color: #4e2bf4;
     transition: 0.3s;
 }
 
-#mb-menu-area #mb-gnb > ul > li.depth1.active span::before {
+#mb-menu-area .mb-gnb > ul > li.depth1.active span::before {
     content: "";
     border-radius: 50%;
     background: #4e2bf4;
@@ -264,22 +266,22 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     top: -4px;
 }
 
-#mb-menu-area #mb-gnb ul.depth2 {
+#mb-menu-area .mb-gnb ul.depth2 {
     display: none;
     position: absolute;
     left: 45%;
     top: 0;
 }
 
-#mb-menu-area #mb-gnb ul.depth2 > li {
+#mb-menu-area .mb-gnb ul.depth2 > li {
     margin-top: 25px;
 }
 
-#mb-menu-area #mb-gnb ul.depth2 > li:first-child {
+#mb-menu-area .mb-gnb ul.depth2 > li:first-child {
     margin-top: 0;
 }
 
-#mb-menu-area #mb-gnb ul.depth2 > li a {
+#mb-menu-area .mb-gnb ul.depth2 > li a {
     font-family: "Noto Sans KR";
     font-weight: 400;
     font-size: 16px;

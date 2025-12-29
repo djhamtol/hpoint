@@ -1,4 +1,9 @@
 {
     "login" : "로그인",
-    "sign_up" : "회원가입"
+    "sign_up" : "회원가입",
+    "easy_text" : "하고 쉽고 편한",
+    "point_text" : "포인트혜택을 누려보세요.",
+    "app_text" : "포인트의 모든것! H.Point APP 다운받기"
+
+
 }
