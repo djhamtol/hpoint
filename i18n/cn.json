@@ -1,4 +1,41 @@
 {
-    "login":"",
-    "join" : ""
+    "login" : "登陆后",
+    "sign_up" : "注册会员",
+    "easy_text" : "即可简单方便地",
+    "point_text" : "享受购物优惠吧。",
+    "app_text" : "积分所有相关事宜! 下载H.Point APP",
+    "gnb" : [
+        {
+            "depth1" : "介绍",
+            "children" : [
+                { "depth2" : "H.Point介绍", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "使用地点",
+            "children" : [
+                { "depth2" : "购物", "link" : "#" },
+                { "depth2" : "美食", "link" : "#" },
+                { "depth2" : "生活", "link" : "#" },
+                { "depth2" : "时尚", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "优惠",
+            "children" : [
+                { "depth2" : "活动", "link" : "#" },
+                { "depth2" : "优惠券", "link" : "#" },
+                { "depth2" : "Plus Point", "link" : "#" },
+                { "depth2" : "任务", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "客服中心",
+            "children" : [
+                { "depth2" : "公告事项", "link" : "#" },
+                { "depth2" : "FAQ", "link" : "#" },
+                { "depth2" : "1:1咨询", "link" : "#" }
+            ]
+        }
+    ]
 }

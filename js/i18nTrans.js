@@ -14,31 +14,80 @@ $(function () {
 
   jqueryI18next.init(i18next, $, { //jquery연결
     tName:'t'
-    });
+  });
 
   $('body').localize(); //data-i18n 값 적용
 
+  mbGnb(); //기본 언어에 맞는 gnb 노출, i18next는 비동기라서 로딩이 완료되면 실행하는 콜백함수 내에서 작동시키기
+
   });
 
-$('.global select').on('change', function() {
 
-  const lang = $(this).find('option:selected').val();
+  const mbGnb = function () {
 
-  i18next.changeLanguage(lang, function () { //언어 변경
-    $('#mb-menu-area .mb-gnb').hide();
+    $('.mb-gnb').append(`<ul></ul>`);
 
-    if (i18next.language=='ko') {
-      $('#mb-menu-area .ko_gnb').show();
-    }
-    else if (i18next.language=='en') {
-      $('#mb-menu-area .en_gnb').show();
-    }
-    else if (i18next.language=='cn') {
-      $('#mb-menu-area .en_gnb').show();
-    }
-    
-    $('body').localize();
-  });
+    i18next.t('gnb', { returnObjects: true }).forEach((menu, idx) => {
+      let menuLi = $(
+          `<li class="depth1">
+          <span>${menu.depth1}</span>
+          </li>`
+        );
+
+      // $('.mb-gnb > ul').append(
+      //   `<li class="depth1">
+      //   <span>${menu.depth1}</span>
+      //   </li>`
+      //   );
+
+      if (menu.children && menu.children.length) {
+
+
+
+        const subUl = $(`<ul class="depth2"></ul>`);
+        
+        menu.children.forEach((sub) => {
+
+          subUl.append(
+
+            `<li><a href="${sub.link}">${sub.depth2}</a></li>`
+
+            );
+
+        })
+
+        menuLi.append(subUl);
+
+      } else {
+        menuLi = $(
+          `<li class="depth1">
+          <a href="${menu.link}">
+          <span>${menu.depth1}</span>
+          </a>
+          </li>`
+        );
+      }
+
+      $('.mb-gnb > ul').append(menuLi);
+
+    })
+
+  }
+
+
+  $('.global select').on('change', function() {
+
+    const lang = $(this).find('option:selected').val();
+
+    i18next.changeLanguage(lang, function () { //언어 변경
+
+      $('body').localize();
+      
+      $('.mb-gnb').empty();
+
+      mbGnb();
+
+    });
 
   });
 

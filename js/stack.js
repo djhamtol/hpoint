@@ -26,7 +26,7 @@ $(function () {
     });
 
     // mb-gnb depth2 열기
-    $('#mb-menu-area .mb-gnb > ul > li.depth1').on('click', function(){
+    $('#mb-menu-area .mb-gnb').on('click', 'li.depth1', function(){
 
         $(this).addClass('active').siblings().removeClass('active');
 

@@ -3,7 +3,73 @@
     "sign_up" : "회원가입",
     "easy_text" : "하고 쉽고 편한",
     "point_text" : "포인트혜택을 누려보세요.",
-    "app_text" : "포인트의 모든것! H.Point APP 다운받기"
-
-
+    "app_text" : "포인트의 모든것! H.Point APP 다운받기",
+    "gnb" : [
+        {
+            "depth1" : "소개",
+            "children" : [
+                { "depth2" : "H.Point소개", "link" : "#" },
+                { "depth2" : "사용처안내", "link" : "#" },
+                { "depth2" : "가입혜택", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "쌓기",
+            "children" : [
+                { "depth2" : "즐길거리", "link" : "#" },
+                { "depth2" : "전환하기", "link" : "#" },
+                { "depth2" : "충전하기", "link" : "#" },
+                { "depth2" : "영수증/쿠폰", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "쓰기",
+            "children" : [
+                { "depth2" : "포인트샵", "link" : "#" },
+                { "depth2" : "선물하기", "link" : "#" },
+                { "depth2" : "기부하기", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "혜택",
+            "children" : [
+                { "depth2" : "이벤트", "link" : "#" },
+                { "depth2" : "쿠폰", "link" : "#" },
+                { "depth2" : "플러스포인트", "link" : "#" },
+                { "depth2" : "미션", "link" : "#" },
+                { "depth2" : "제휴카드안내", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "클럽",
+            "children" : [
+                { "depth2" : "클럽프렌즈", "link" : "#" },
+                { "depth2" : "클럽웨딩", "link" : "#" },
+                { "depth2" : "헤이,마이 뷰티", "link" : "#" },
+                { "depth2" : "클럽아디다스", "link" : "#" },
+                { "depth2" : "클럽트래블", "link" : "#" },
+                { "depth2" : "클럽육학다식", "link" : "#" },
+                { "depth2" : "클럽집테리어", "link" : "#" },
+                { "depth2" : "클럽세이푸디", "link" : "#" },
+                { "depth2" : "클럽디즈니", "link" : "#" },
+                { "depth2" : "아파트클럽", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "H.Point Pay",
+            "link" : "#"
+        },
+        {
+            "depth1" : "제휴문의",
+            "link" : "#"
+        },
+        {
+            "depth1" : "고객센터",
+            "children" : [
+                { "depth2" : "FAQ", "link" : "#" },
+                { "depth2" : "1:1문의", "link" : "#" },
+                { "depth2" : "공지사항", "link" : "#" }
+            ]
+        }
+    ]
 }
