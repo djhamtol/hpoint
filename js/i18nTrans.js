@@ -22,73 +22,64 @@ $(function () {
 
   });
 
-
-  const mbGnb = function () {
-
-    $('.mb-gnb').append(`<ul></ul>`);
-
-    i18next.t('gnb', { returnObjects: true }).forEach((menu, idx) => {
-      let menuLi = $(
-          `<li class="depth1">
-          <span>${menu.depth1}</span>
-          </li>`
-        );
-
-      // $('.mb-gnb > ul').append(
-      //   `<li class="depth1">
-      //   <span>${menu.depth1}</span>
-      //   </li>`
-      //   );
-
-      if (menu.children && menu.children.length) {
-
-
-
-        const subUl = $(`<ul class="depth2"></ul>`);
-        
-        menu.children.forEach((sub) => {
-
-          subUl.append(
-
-            `<li><a href="${sub.link}">${sub.depth2}</a></li>`
-
-            );
-
-        })
-
-        menuLi.append(subUl);
-
-      } else {
-        menuLi = $(
-          `<li class="depth1">
-          <a href="${menu.link}">
-          <span>${menu.depth1}</span>
-          </a>
-          </li>`
-        );
-      }
-
-      $('.mb-gnb > ul').append(menuLi);
-
-    })
-
-  }
-
-
   $('.global select').on('change', function() {
 
     const lang = $(this).find('option:selected').val();
 
     i18next.changeLanguage(lang, function () { //언어 변경
 
+      document.documentElement.lang = lang; //html lang 변경
+
       $('body').localize();
-      
-      $('.mb-gnb').empty();
 
       mbGnb();
+
+      if (lang==='cn') { //cn일 때 폰트 수정해야 화면에 텍스트 뜸
+        $('body').addClass('cn');
+      } else {
+        $('body').removeClass('cn');
+      };
 
     });
 
   });
+
+  // 언어별 동적 추가 되는 mbgnb() (i18next x)
+  const mbGnb = function () {
+
+    $('.mb-gnb').empty().append(`<ul></ul>`);
+
+    i18next.t('gnb', { returnObjects: true }).forEach((menu, idx) => {
+
+      const menuLi = $(`<li class="depth1"></li>`);
+
+      if (menu.children && menu.children.length) {
+
+        const subUl = $(`<ul class="depth2"></ul>`);
+        
+        menu.children.forEach((sub) => {
+          subUl.append(
+            `<li><a href="${sub.link}">${sub.depth2}</a></li>`
+          );
+        });
+
+        menuLi.append(`<span>${menu.depth1}</span>`);
+        menuLi.append(subUl);
+
+      } else {
+
+        menuLi.append(
+          `<a href="${menu.link}">
+          <span>${menu.depth1}</span>
+          </a>`
+        );
+
+      };
+
+      $('.mb-gnb > ul').append(menuLi);
+
+    });
+
+  };
 
 });
