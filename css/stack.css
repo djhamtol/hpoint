@@ -1,5 +1,5 @@
 
-header .pc-util , header #gnb {
+header .pcUtil , header #pcGnb {
     display: none;
 }
 
@@ -15,7 +15,7 @@ header {
     height: 60px;
 }
 
-header .hd-wrap {
+header .hdWrap {
     padding: 15px 15px 0 20px;
     display: flex;
 }
@@ -33,36 +33,36 @@ header h1.logo a {
     height: 26px;
 }
 
-header .mb-hd-utils {
+header .mbHdUtils {
     margin-left: auto;
     display: flex;
     gap: 25px;
 }
 
-header .mb-hd-utils ul.mb-util {
+header .mbHdUtils ul.mbUtil {
     display: flex;
     gap: 12px;
 }
 
-header .mb-hd-utils ul li a {
+header .mbHdUtils ul li a {
     font-family: 'HGGGothicssi';
     font-weight: 600;
     font-size: 12px;
     color: #111;
 }
 
-body.cn header .mb-hd-utils ul li a {
+body.cn header .mbHdUtils ul li a {
     font-family: "Noto Sans SC", sans-serif !important;
 }
 
-header .mb-hd-utils .hambuger-menu {
+header .mbHdUtils .hambugerMenu {
     width: 30px;
     height: 30px;
     position: relative;
     z-index: 9;
 }
 
-header .mb-hd-utils .hambuger-menu span {
+header .mbHdUtils .hambugerMenu span {
     display: block;
     width: 20px;
     height: 3px;
@@ -72,35 +72,35 @@ header .mb-hd-utils .hambuger-menu span {
     transition: .3s;
 }
 
-header .mb-hd-utils .hambuger-menu .bar1 {
+header .mbHdUtils .hambugerMenu .bar1 {
     top: 6px;
 }
 
-header .mb-hd-utils .hambuger-menu .bar2 {
+header .mbHdUtils .hambugerMenu .bar2 {
     top: 14px;
 }
 
-header .mb-hd-utils .hambuger-menu .bar3 {
+header .mbHdUtils .hambugerMenu .bar3 {
     bottom: 5px;
 }
 
-header .mb-hd-utils .hambuger-menu.active span {
+header .mbHdUtils .hambugerMenu.active span {
     width: 26px;
 }
 
-header .mb-hd-utils .hambuger-menu.active .bar1 {
+header .mbHdUtils .hambugerMenu.active .bar1 {
     transform: rotate(45deg) translate(4px, 7px);
 }
 
-header .mb-hd-utils .hambuger-menu.active .bar2 {
+header .mbHdUtils .hambugerMenu.active .bar2 {
     display: none;
 }
 
-header .mb-hd-utils .hambuger-menu.active .bar3 {
+header .mbHdUtils .hambugerMenu.active .bar3 {
     transform: rotate(-45deg) translate(4px, -7px);
 }
 
-#mb-menu-area {
+#mbMenuArea {
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -111,11 +111,11 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     overflow-y: auto;
 }
 
-#mb-menu-area .content {
+#mbMenuArea .content {
     padding-top: 60px;
 }
 
-#mb-menu-area .top-area {
+#mbMenuArea .topArea {
     position: fixed;
     top: 0;
     right: -100%;
@@ -127,7 +127,7 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     align-items: center;
 }
 
-#mb-menu-area .top-area .logo {
+#mbMenuArea .topArea .logo {
     margin-right: auto;
     display: block;
     background: url(../images/logo1.png) no-repeat;
@@ -137,21 +137,21 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     height: 26px;
 }
 
-#mb-menu-area .top-area .mb-util {
+#mbMenuArea .topArea .mbUtil {
     margin-right: 40px;
     display: flex;
     gap: 18px;
 }
 
-#mb-menu-area .top-area .mb-util li {
+#mbMenuArea .topArea .mbUtil li {
     position: relative;
 }
 
-#mb-menu-area .top-area .mb-util li:first-child::before {
+#mbMenuArea .topArea .mbUtil li:first-child::before {
     display: none;
 }
 
-#mb-menu-area .top-area .mb-util li::before {
+#mbMenuArea .topArea .mbUtil li::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -162,7 +162,7 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     background-color: #111;
 }
 
-#mb-menu-area .top-area .mb-util li a {
+#mbMenuArea .topArea .mbUtil li a {
     font-family: "Noto Sans KR";
     font-weight: 500;
     font-size: 13px;
@@ -170,11 +170,11 @@ header .mb-hd-utils .hambuger-menu.active .bar3 {
     letter-spacing: -0.8px;
 }
 
-body.cn #mb-menu-area .top-area .mb-util li a {
+body.cn #mbMenuArea .topArea .mbUtil li a {
     font-family: "Noto Sans SC", sans-serif !important;
 }
 
-#mb-menu-area .top-area .mb-util li a.app-down {
+#mbMenuArea .topArea .mbUtil li a.appDown {
     font-weight: 500;
     color: #4e2bf4;
     padding-right: 13px; /* 이미지 넣을 자리 */
@@ -183,7 +183,7 @@ body.cn #mb-menu-area .top-area .mb-util li a {
     background-position: right center;
 }
 
-#mb-menu-area .top-area .mb-util li .global {
+.gloBtn {
     display: block;
     background: url(../images/ic_gnb_global.png) no-repeat;
     width: 24px;
@@ -193,13 +193,15 @@ body.cn #mb-menu-area .top-area .mb-util li a {
     padding: 0;
 }
 
-#mb-menu-area .top-area .mb-util li .global select  {
+#mbMenuArea .topArea .mbUtil .global select  {
     width: 24px;
     height: 24px;
     opacity: 0;
+    position: absolute;
+    top: 0;
 }
 
-#mb-menu-area .my-area {
+#mbMenuArea .myArea {
     margin-top: 20px;
     padding: 0 20px;
     font-family: "Noto Sans KR";
@@ -209,25 +211,25 @@ body.cn #mb-menu-area .top-area .mb-util li a {
     letter-spacing: -0.8px;
 }
 
-body.cn #mb-menu-area .my-area {
+body.cn #mbMenuArea .myArea {
     font-family: "Noto Sans SC", sans-serif !important;
 }
 
-#mb-menu-area .my-area a {
+#mbMenuArea .myArea a {
     color: #4e2bf4;
 }
 
-#mb-menu-area .app-area {
+#mbMenuArea .appArea {
     margin-top: 30px;
     background: #f1f3ff;
 }
 
-#mb-menu-area .app-area a {
+#mbMenuArea .appArea a {
     display: block;
     padding: 12px 20px;
 }
 
-#mb-menu-area .app-area a p {
+#mbMenuArea .appArea a p {
     padding: 9px 55px 9px 0;
     font-family: "Noto Sans KR";
     font-weight: 500;
@@ -240,41 +242,40 @@ body.cn #mb-menu-area .my-area {
     background-position: right center;
 }
 
-body.cn #mb-menu-area .app-area a p {
+body.cn #mbMenuArea .appArea a p {
     font-family: "Noto Sans SC", sans-serif !important;
 }
 
-#mb-menu-area .mb-gnb {
-    
+#mbMenuArea #mbGnb {
     margin-top: 30px;
     padding: 0 20px 30px 20px;
 }
 
-#mb-menu-area .mb-gnb > ul {
+#mbMenuArea #mbGnb > ul {
     position: relative;
 }
 
-#mb-menu-area .mb-gnb > ul > li.depth1 {
+#mbMenuArea #mbGnb > ul > li.depth1 {
     margin-top: 30px;
 }
 
-#mb-menu-area .mb-gnb > ul > li.depth1 span {
+#mbMenuArea #mbGnb > ul > li.depth1 span {
     position: relative;
     font-family: "HGGGothicssi";
     font-weight: 800;
     font-size: 20px;
     color: #111;
 }
-body.cn #mb-menu-area .mb-gnb > ul > li.depth1 span {
+body.cn #mbMenuArea #mbGnb > ul > li.depth1 span {
     font-family: "Noto Sans SC", sans-serif !important;
 }
 
-#mb-menu-area .mb-gnb > ul > li.depth1.active span {
+#mbMenuArea #mbGnb > ul > li.depth1.active span {
     color: #4e2bf4;
     transition: 0.3s;
 }
 
-#mb-menu-area .mb-gnb > ul > li.depth1.active span::before {
+#mbMenuArea #mbGnb > ul > li.depth1.active span::before {
     content: "";
     border-radius: 50%;
     background: #4e2bf4;
@@ -285,22 +286,22 @@ body.cn #mb-menu-area .mb-gnb > ul > li.depth1 span {
     top: -4px;
 }
 
-#mb-menu-area .mb-gnb ul.depth2 {
+#mbMenuArea #mbGnb ul.depth2 {
     display: none;
     position: absolute;
     left: 45%;
     top: 0;
 }
 
-#mb-menu-area .mb-gnb ul.depth2 > li {
+#mbMenuArea #mbGnb ul.depth2 > li {
     margin-top: 25px;
 }
 
-#mb-menu-area .mb-gnb ul.depth2 > li:first-child {
+#mbMenuArea #mbGnb ul.depth2 > li:first-child {
     margin-top: 0;
 }
 
-#mb-menu-area .mb-gnb ul.depth2 > li a {
+#mbMenuArea #mbGnb ul.depth2 > li a {
     font-family: "Noto Sans KR";
     font-weight: 400;
     font-size: 16px;
@@ -308,18 +309,86 @@ body.cn #mb-menu-area .mb-gnb > ul > li.depth1 span {
     letter-spacing: -0.8px;
 }
 
-body.cn #mb-menu-area .mb-gnb ul.depth2 > li a {
+body.cn #mbMenuArea #mbGnb ul.depth2 > li a {
     font-family: "Noto Sans SC", sans-serif !important;
 }
 
 /* =============== PC =============== */
 @media (min-width: 1024px) {
     
-    header .pc-util , header #gnb {
+    header .pcUtil , header #pcGnb {
         display: block;
     }
 
-    header .mb-hd-utils {
+    header .mbHdUtils , #mbMenuArea {
         display: none;
     }
+
+    header .hdWrap {
+        padding: 0;
+        max-width: 1284px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    header .pcUtil {
+        height: 40px;
+        display: flex;
+        gap: 0 18px;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 30px;
+    }
+
+    header .pcUtil li a {
+        font-family: "Noto Sans KR";
+        font-weight: 400;
+        font-size: 13px;
+        color: #767676;
+        letter-spacing: -0.8px;
+    }
+
+    header .pcUtil li .appDown {
+        font-weight: 700;
+        color: #4e2bf4;
+        padding-right: 12px;
+        background: url(../images/ic_download1.png) no-repeat;
+        background-position: right center;
+    }
+
+    header .global {
+        position: relative;
+    }
+
+    header .global .gloDrop {
+        display: none;
+        position: absolute;
+        top: 24px;
+        right: 0;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #4e2bf4;
+        border-radius: 5px;
+    }
+
+    header .global:hover .gloDrop {
+        display: block;
+    }
+
+    header .global .gloDrop li {
+        font-family: "Noto Sans KR";
+        font-weight: 400;
+        font-size: 13px;
+        color: #767676;
+        letter-spacing: -0.8px;
+        line-height: 20px;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+
+    header .global .gloDrop li:hover {
+        background-color: #f1f1f1;
+    }
+
 }

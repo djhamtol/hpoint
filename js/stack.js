@@ -1,13 +1,13 @@
 $(function () {
     
     // 햄버거 버튼
-    $('header .mb-hd-utils .hambuger-menu').on('click', function(){
+    $('header .mbHdUtils .hambugerMenu').on('click', function(){
         
         if($(this).hasClass('active')) { //닫기
 
             $(this).removeClass('active').attr('aria-label', '메뉴 열기');
 
-            gsap.to('#mb-menu-area, #mb-menu-area .top-area', {
+            gsap.to('#mbMenuArea, #mbMenuArea .topArea', {
                 right:'-100%', duration: 0.3
             });
 
@@ -17,7 +17,7 @@ $(function () {
 
             $(this).addClass('active').attr('aria-label', '메뉴 닫기');
 
-            gsap.to('#mb-menu-area, #mb-menu-area .top-area', {
+            gsap.to('#mbMenuArea, #mbMenuArea .topArea', {
                 right: 0, duration: 0.3
             });
 
@@ -25,8 +25,8 @@ $(function () {
 
     });
 
-    // mb-gnb depth2 열기
-    $('#mb-menu-area .mb-gnb').on('click', 'li.depth1', function(){
+    // mbGnb depth2 열기
+    $('#mbMenuArea #mbGnb').on('click', 'li.depth1', function(){
 
         $(this).addClass('active').siblings().removeClass('active');
 

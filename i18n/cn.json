@@ -1,10 +1,10 @@
 {
     "login" : "登陆后",
-    "sign_up" : "注册会员",
-    "easy_text" : "即可简单方便地",
-    "point_text" : "享受购物优惠吧。",
-    "app_text" : "积分所有相关事宜! 下载H.Point APP",
-    "gnb" : [
+    "signUp" : "注册会员",
+    "easyText" : "即可简单方便地",
+    "pointText" : "享受购物优惠吧。",
+    "appText" : "积分所有相关事宜! 下载H.Point APP",
+    "mbGnb" : [
         {
             "depth1" : "介绍",
             "children" : [

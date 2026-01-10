@@ -22,9 +22,10 @@ $(function () {
 
   });
 
+  // mb 언어 변경
   $('.global select').on('change', function() {
 
-    const lang = $(this).find('option:selected').val();
+    const lang = $(this).val(); // selected 옵션 값
 
     i18next.changeLanguage(lang, function () { //언어 변경
 
@@ -44,12 +45,37 @@ $(function () {
 
   });
 
-  // 언어별 동적 추가 되는 mbgnb() (i18next x)
+  // pc 언어 변경
+  $('.gloDrop li').on('click', function() {
+
+    const lang = $(this).data('lang');
+
+    $('.global select').val(`${lang}`); // 선택한 언어로 mb selected 설정
+
+    i18next.changeLanguage(lang, function () { //언어 변경
+
+      document.documentElement.lang = lang; //html lang 변경
+
+      $('body').localize();
+
+      mbGnb();
+
+      if (lang==='cn') { //cn일 때 폰트 수정해야 화면에 텍스트 뜸
+        $('body').addClass('cn');
+      } else {
+        $('body').removeClass('cn');
+      };
+
+    });
+
+  });
+
+  // 언어별 동적 추가 되는 mbGnb() (i18next x)
   const mbGnb = function () {
 
-    $('.mb-gnb').empty().append(`<ul></ul>`);
+    $('#mbGnb').empty().append(`<ul></ul>`);
 
-    i18next.t('gnb', { returnObjects: true }).forEach((menu, idx) => {
+    i18next.t('mbGnb', { returnObjects: true }).forEach((menu, idx) => {
 
       const menuLi = $(`<li class="depth1"></li>`);
 
@@ -76,7 +102,7 @@ $(function () {
 
       };
 
-      $('.mb-gnb > ul').append(menuLi);
+      $('#mbGnb > ul').append(menuLi);
 
     });
 

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>현대백화점그룹 통합멤버십 | H.Point</title>
-    <link rel="icon" href="images/favicon-16x16.png"/>
-    <link rel="apple-touch-icon" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="images/favicon-16x16.png" />
 
     <link rel="stylesheet" href="css/reset.css">
 
@@ -18,24 +19,34 @@
     <script src="js/i18next.min.js"></script>
     <script src="js/i18next-http-backend.min.js"></script>
     <script src="js/jquery-i18next.min.js"></script>
-    
+
     <script src="js/i18nTrans.js"></script>
     <script src="js/stack.js"></script>
 </head>
+
 <body>
     <div class="wrap">
         <header>
-            <ul class="pc-util pc-only">
-                <li><a href="#" data-i18n="login"></a></li>
-                <li><a href="#" data-i18n="sign_up"></a></li>
-                <li><button></button></li>
-                <li></li>
-            </ul>
-            <div class="hd-wrap">
+            <div class="hdWrap">
+                <ul class="pcUtil">
+                    <li><a href="#" data-i18n="login"></a></li>
+                    <li><a href="#" data-i18n="signUp"></a></li>
+                    <li><a href="#" class="appDown">APP</a></li>
+                    <li class="global">
+                        <button class="gloBtn">
+                            <span class="sr-only">Language</span>
+                        </button>
+                        <ul class="gloDrop">
+                            <li data-lang="ko">한국어</li>
+                            <li data-lang="en">English</li>
+                            <li data-lang="cn">中文</li>
+                        </ul>
+                    </li>
+                </ul>
                 <h1 class="logo">
                     <a href="index.html"><span class="sr-only">H.Point</span></a>
                 </h1>
-                <nav id="gnb" class="pc-only">
+                <nav id="pcGnb">
                     <ul>
                         <li>
                             <a href="#">소개</a>
@@ -99,12 +110,12 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="mb-hd-utils mb-only">
-                    <ul class="mb-util">
+                <div class="mbHdUtils">
+                    <ul class="mbUtil">
                         <li><a href="#" data-i18n="login"></a></li>
-                        <li><a href="#" data-i18n="sign_up"></a></li>
+                        <li><a href="#" data-i18n="signUp"></a></li>
                     </ul>
-                    <button class="hambuger-menu" aria-label="메뉴 열기">
+                    <button class="hambugerMenu" aria-label="메뉴 열기">
                         <span class="bar1"></span>
                         <span class="bar2"></span>
                         <span class="bar3"></span>
@@ -112,37 +123,37 @@
                 </div>
             </div>
         </header>
-        <div id="mb-menu-area" class="mb-only">
+        <div id="mbMenuArea">
             <div class="content">
-                <div class="top-area">
+                <div class="topArea">
                     <a href="index.html" class="logo">
                         <span class="sr-only">H.Point</span>
                     </a>
-                    <ul class="mb-util">
+                    <ul class="mbUtil">
                         <li><a href="#" class="login" data-i18n="login"></a></li>
-                        <li><a href="#" class="app-down">APP</a></li>
-                        <li>
-                            <button class="global">
+                        <li><a href="#" class="appDown">APP</a></li>
+                        <li class="global">
+                            <button class="gloBtn">
                                 <span class="sr-only">Language</span>
-                                <select id="sel-lang" name="sel-lang">
-                                    <option value="ko">한국어</option>
-                                    <option value="en">English</option>
-                                    <option value="cn">中文</option>
-                                </select>
                             </button>
+                            <select id="selLang" name="selLang">
+                                <option value="ko">한국어</option>
+                                <option value="en">English</option>
+                                <option value="cn">中文</option>
+                            </select>
                         </li>
                     </ul>
                 </div>
-                <p class="my-area">
-                    <a href="#" data-i18n="login"></a><span data-i18n="easy_text"></span>
-                    <br><span data-i18n="point_text"></span>
+                <p class="myArea">
+                    <a href="#" data-i18n="login"></a><span data-i18n="easyText"></span>
+                    <br><span data-i18n="pointText"></span>
                 </p>
-                <div class="app-area">
+                <div class="appArea">
                     <a href="#">
-                        <p data-i18n="app_text"></p>
+                        <p data-i18n="appText"></p>
                     </a>
                 </div>
-                <nav class="mb-gnb">
+                <nav id="mbGnb">
                     <!-- 동적 요소 -->
                 </nav>
             </div>
@@ -150,61 +161,3 @@
     </div>
 </body>
 </html>
-
-<!-- <ul>
-                        <li class="depth1"><span>소개</span>
-                            <ul class="depth2">
-                                <li><a href="#">H.Point소개</a></li>
-                                <li><a href="#">사용처안내</a></li>
-                                <li><a href="#">가입혜택</a></li>
-                            </ul>
-                        </li>
-                        <li class="depth1"><span>쌓기</span>
-                            <ul class="depth2">
-                                <li><a href="#">즐길거리</a></li>
-                                <li><a href="#">전환하기</a></li>
-                                <li><a href="#">충전하기</a></li>
-                                <li><a href="#">영수증/쿠폰</a></li>
-                            </ul>
-                        </li>
-                        <li class="depth1"><span>쓰기</span>
-                            <ul class="depth2">
-                                <li><a href="#">포인트샵</a></li>
-                                <li><a href="#">선물하기</a></li>
-                                <li><a href="#">기부하기</a></li>
-                            </ul>
-                        </li>
-                        <li class="depth1"><span>혜택</span>
-                            <ul class="depth2">
-                                <li><a href="#">이벤트</a></li>
-                                <li><a href="#">쿠폰</a></li>
-                                <li><a href="#">플러스포인트</a></li>
-                                <li><a href="#">미션</a></li>
-                                <li><a href="#">제휴카드안내</a></li>
-                            </ul>
-                        </li>
-                        <li class="depth1"><span>클럽</span>
-                            <ul class="depth2">
-                                <li><a href="#">클럽프렌즈</a></li>
-                                <li><a href="#">클럽웨딩</a></li>
-                                <li><a href="#">맘스클럽</a></li>
-                                <li><a href="#">헤이,마이 뷰티</a></li>
-                                <li><a href="#">클럽아디다스</a></li>
-                                <li><a href="#">클럽트래블</a></li>
-                                <li><a href="#">클럽육학다식</a></li>
-                                <li><a href="#">클럽집테리어</a></li>                                
-                                <li><a href="#">클럽세이푸디</a></li>
-                                <li><a href="#">클럽디즈니</a></li>
-                                <li><a href="#">아파트클럽</a></li>
-                            </ul>
-                        </li>
-                        <li class="depth1"><a href="#"><span>H.Point Pay</span></a></li>
-                        <li class="depth1"><a href="#"><span>제휴문의</span></a></li>
-                        <li class="depth1"><span>고객센터</span>
-                            <ul class="depth2">
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">1:1문의</a></li>
-                                <li><a href="#">공지사항</a></li>
-                            </ul>
-                        </li>
-                    </ul> -->

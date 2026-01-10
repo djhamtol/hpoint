@@ -1,10 +1,10 @@
 {
     "login" : "Login",
-    "sign_up" : "Sign Up",
-    "easy_text" : ",easily and comfortably",
-    "point_text" : "Enjoy shopping benefits.",
-    "app_text" : "Everything about Points! Download the H.Point app now",
-    "gnb" : [
+    "signUp" : "Sign Up",
+    "easyText" : ",easily and comfortably",
+    "pointText" : "Enjoy shopping benefits.",
+    "appText" : "Everything about Points! Download the H.Point app now",
+    "mbGnb" : [
         {
             "depth1" : "About",
             "children" : [
