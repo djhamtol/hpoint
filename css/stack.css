@@ -1,5 +1,5 @@
 
-header .pcUtil , header #pcGnb {
+header .pcUtil , #pcGnb {
     display: none;
 }
 
@@ -10,6 +10,7 @@ header .pcUtil , header #pcGnb {
 }
 
 header {
+    position: fixed;
     background-color: #fff;
     width: 100%;
     height: 60px;
@@ -59,7 +60,6 @@ header .mbHdUtils .hambugerMenu {
     width: 30px;
     height: 30px;
     position: relative;
-    z-index: 9;
 }
 
 header .mbHdUtils .hambugerMenu span {
@@ -316,7 +316,7 @@ body.cn #mbMenuArea #mbGnb ul.depth2 > li a {
 /* =============== PC =============== */
 @media (min-width: 1024px) {
     
-    header .pcUtil , header #pcGnb {
+    header .pcUtil , #pcGnb {
         display: block;
     }
 
@@ -324,8 +324,14 @@ body.cn #mbMenuArea #mbGnb ul.depth2 > li a {
         display: none;
     }
 
+    header {
+        height: 120px;
+        z-index: 100;
+    }
+
     header .hdWrap {
-        padding: 0;
+        height: 100%;
+        padding: 40px 30px 0 30px;
         max-width: 1284px;
         margin: 0 auto;
         position: relative;
@@ -370,6 +376,7 @@ body.cn #mbMenuArea #mbGnb ul.depth2 > li a {
         padding: 5px;
         border: 1px solid #4e2bf4;
         border-radius: 5px;
+        z-index: 99;
     }
 
     header .global:hover .gloDrop {
@@ -389,6 +396,117 @@ body.cn #mbMenuArea #mbGnb ul.depth2 > li a {
 
     header .global .gloDrop li:hover {
         background-color: #f1f1f1;
+    }
+
+    header h1.logo {
+        margin-right: auto;
+        padding-top: 20px;
+    }
+
+    header h1.logo a {
+        display: block;
+        width: 90px;
+        height: 31px;
+        background: url(../images/pc_logo1.png) no-repeat;
+        background-size: auto;
+        background-position: 0 0;
+    }
+
+    #pcGnb {
+        z-index: 90;
+    }
+
+    #pcGnb > ul {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #pcGnb > ul > li {
+        padding-right: 80px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    #pcGnb > ul > li:last-child {
+        padding-right: 0;
+    }
+
+    #pcGnb > ul > li .depth1 {
+        font-family: "HGGGothicssi";
+        font-weight: 600;
+        font-size: 22px;
+        color: #111;
+        position: relative;
+    }
+
+    #pcGnb > ul > li .depth1.active , #pcGnb > ul > li:hover .depth1 {
+        color: #4e2bf4;
+        transition: .3s;
+    }
+
+    #pcGnb > ul > li .depth1::before {
+        content: "";
+        position: absolute;
+        right: -7px;
+        top: -4px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #4e2bf4;
+        opacity: 0;
+    }
+
+    #pcGnb > ul > li .depth1.active::before , #pcGnb > ul > li:hover .depth1::before {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    #pcGnb .depth2 {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+
+    #pcGnb .depth2 li {
+        margin-top: 20px;
+    }
+
+    #pcGnb .depth2 li:first-child {
+        margin-top: 15px;
+    }
+
+    #pcGnb .depth2 li a {
+        font-family: "Noto Sans KR";
+        font-weight: 500;
+        font-size: 16px;
+        color: #111;
+        letter-spacing: -0.8px;
+    }
+
+    #pcGnb .depth2 li a:hover {
+        color: #4e2bf4;
+    }
+    
+    header .pcGnbBg {
+        background-color: #fff;
+        height: 0;
+        position: relative;
+    }
+
+    .headerDim {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.5;
     }
 
 }
