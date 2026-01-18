@@ -1,7 +1,7 @@
 $(function () {
     
     // 햄버거 버튼
-    $('header .mbHdUtils .hambugerMenu').on('click', function(){
+    $('.hambugerMenu').on('click', function(){
         
         if($(this).hasClass('active')) { //닫기
 

@@ -17,7 +17,7 @@ header {
 }
 
 header .hdWrap {
-    padding: 15px 15px 0 20px;
+    padding: 15px 70px 0 20px;
     display: flex;
 }
 
@@ -34,35 +34,33 @@ header h1.logo a {
     height: 26px;
 }
 
-header .mbHdUtils {
+header .mbUtil {
     margin-left: auto;
-    display: flex;
-    gap: 25px;
-}
-
-header .mbHdUtils ul.mbUtil {
     display: flex;
     gap: 12px;
 }
 
-header .mbHdUtils ul li a {
+header .mbUtil li a {
     font-family: 'HGGGothicssi';
     font-weight: 600;
     font-size: 12px;
     color: #111;
 }
 
-body.cn header .mbHdUtils ul li a {
+body.cn header .mbUtil li a {
     font-family: "Noto Sans SC", sans-serif !important;
 }
 
-header .mbHdUtils .hambugerMenu {
+.hambugerMenu {
     width: 30px;
     height: 30px;
-    position: relative;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 99;
 }
 
-header .mbHdUtils .hambugerMenu span {
+.hambugerMenu span {
     display: block;
     width: 20px;
     height: 3px;
@@ -72,31 +70,31 @@ header .mbHdUtils .hambugerMenu span {
     transition: .3s;
 }
 
-header .mbHdUtils .hambugerMenu .bar1 {
+.hambugerMenu .bar1 {
     top: 6px;
 }
 
-header .mbHdUtils .hambugerMenu .bar2 {
+.hambugerMenu .bar2 {
     top: 14px;
 }
 
-header .mbHdUtils .hambugerMenu .bar3 {
+.hambugerMenu .bar3 {
     bottom: 5px;
 }
 
-header .mbHdUtils .hambugerMenu.active span {
+.hambugerMenu.active span {
     width: 26px;
 }
 
-header .mbHdUtils .hambugerMenu.active .bar1 {
+.hambugerMenu.active .bar1 {
     transform: rotate(45deg) translate(4px, 7px);
 }
 
-header .mbHdUtils .hambugerMenu.active .bar2 {
+.hambugerMenu.active .bar2 {
     display: none;
 }
 
-header .mbHdUtils .hambugerMenu.active .bar3 {
+.hambugerMenu.active .bar3 {
     transform: rotate(-45deg) translate(4px, -7px);
 }
 
@@ -320,7 +318,7 @@ body.cn #mbMenuArea #mbGnb ul.depth2 > li a {
         display: block;
     }
 
-    header .mbHdUtils , #mbMenuArea {
+    header .mbUtil , #mbMenuArea , .hambugerMenu {
         display: none;
     }
 
