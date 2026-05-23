@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대백화점그룹 통합멤버십 | H.Point</title>
+    <link rel="icon" href="images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="images/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/stack.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+
+    <script src="js/i18next.min.js"></script>
+    <script src="js/i18next-http-backend.min.js"></script>
+    <script src="js/jquery-i18next.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/i18nTrans.js"></script>
+    <script src="js/stack.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header>
+            <div class="hdWrap">
+                <ul class="pcUtil">
+                    <li><a href="#" data-i18n="login"></a></li>
+                    <li><a href="#" data-i18n="signUp"></a></li>
+                    <li><a href="#" class="appDown">APP</a></li>
+                    <li class="global">
+                        <button class="gloBtn">
+                            <span class="sr-only">Language</span>
+                        </button>
+                        <ul class="gloDrop">
+                            <li data-lang="ko">한국어</li>
+                            <li data-lang="en">English</li>
+                            <li data-lang="cn">中文</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h1 class="logo">
+                    <a href="index.html"><span class="sr-only">H.Point</span></a>
+                </h1>
+                <nav id="pcGnb">
+                    <ul>
+                        <li>
+                            <a href="#" class="depth1">소개</a>
+                            <ul class="depth2">
+                                <li><a href="#">H.Point소개</a></li>
+                                <li><a href="#">사용처안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth1 active">쌓기</a>
+                            <ul class="depth2">
+                                <li><a href="#">즐길거리</a></li>
+                                <li><a href="#">전환하기</a></li>
+                                <li><a href="#">충전하기</a></li>
+                                <li><a href="#">영수증/쿠폰</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth1">쓰기</a>
+                            <ul class="depth2">
+                                <li><a href="#">포인트샵</a></li>
+                                <li><a href="#">선물하기</a></li>
+                                <li><a href="#">기부하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth1">혜택</a>
+                            <ul class="depth2">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">쿠폰</a></li>
+                                <li><a href="#">플러스포인트</a></li>
+                                <li><a href="#">미션</a></li>
+                                <li><a href="#">제휴카드안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth1">클럽</a>
+                            <ul class="depth2">
+                                <li><a href="#">클럽프렌즈</a></li>
+                                <li><a href="#">클럽웨딩</a></li>
+                                <li><a href="#">맘스클럽</a></li>
+                                <li><a href="#">헤이, 마이 뷰티</a></li>
+                                <li><a href="#">클럽아디다스</a></li>
+                                <li><a href="#">클럽트래블</a></li>
+                                <li><a href="#">클럽육학다식</a></li>
+                                <li><a href="#">클럽집테리어</a></li>
+                                <li><a href="#">클럽세이푸디</a></li>
+                                <li><a href="#">클럽디즈니</a></li>
+                                <li><a href="#">아파트클럽</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="depth1">H.Point Pay</a></li>
+                        <li><a href="#" class="depth1">제휴문의</a></li>
+                        <li>
+                            <a href="#" class="depth1">고객센터</a>
+                            <ul class="depth2">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">1:1문의</a></li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="mbUtil">
+                    <li><a href="#" data-i18n="login"></a></li>
+                    <li><a href="#" data-i18n="signUp"></a></li>
+                </ul>
+            </div>
+            <div class="pcGnbBg"></div>
+        </header>
+
+        <button type="button" class="hambugerMenu" aria-label="메뉴 열기">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+
+        <div class="headerDim"></div>
+
+        <div class="mbDim"></div>
+
+        <div id="mbMenuArea">
+            <div class="content">
+                <div class="topArea">
+                    <a href="index.html" class="logo">
+                        <span class="sr-only">H.Point</span>
+                    </a>
+                    <ul class="mbUtil">
+                        <li><a href="#" class="login" data-i18n="login"></a></li>
+                        <li><a href="#" class="appDown">APP</a></li>
+                        <li class="global">
+                            <button class="gloBtn">
+                                <span class="sr-only">Language</span>
+                            </button>
+                            <select id="selLang" name="selLang">
+                                <option value="ko">한국어</option>
+                                <option value="en">English</option>
+                                <option value="cn">中文</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <p class="myArea">
+                    <a href="#" data-i18n="login"></a><span data-i18n="easyText"></span>
+                    <br><span data-i18n="pointText"></span>
+                </p>
+                <div class="appArea">
+                    <a href="#">
+                        <p data-i18n="appText"></p>
+                    </a>
+                </div>
+                <nav id="mbGnb">
+                    <!-- 동적 요소 -->
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <section class="pageTitle">
+                <div class="textArea">
+                    <h2 class="title">포인트 쌓기</h2>
+                    <p>머물수록 쌓이는 즐거움</p>
+                </div>
+            </section>
+            <div class="enjoyWrap">
+                <section class="part part1 color1">
+                    <div class="inner">
+                        <div class="imgArea">
+                            <!-- swiper slide -->
+                                <div class="swiper playSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="icon"></div>
+                                            <strong>출첵룰렛</strong>
+                                            <p>
+                                                매일 돌리면 포인트와
+                                                <br>
+                                                알파벳이 쏟아져요
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="icon"></div>
+                                            <strong>알파벳</strong>
+                                            <p>
+                                                알파벳 모아서 포인트로 
+                                                <br>
+                                                바꿔보세요
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="icon"></div>
+                                            <strong>포인트워크</strong>
+                                            <p>
+                                                걸으면 포인트가 쌓여요
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="icon"></div>
+                                            <strong>쿠폰</strong>
+                                            <p>
+                                                백화점 가기 전 할인혜택 
+                                                <br>
+                                                확인하세요
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="icon"></div>
+                                            <strong>포인트충전</strong>
+                                            <p>
+                                                포인트가 부족할때 
+                                                <br>
+                                                충전하세요!
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="icon"></div>
+                                            <strong>사용처안내</strong>
+                                            <p>
+                                                쇼핑/생활/패션/여행/
+                                                <br>
+                                                문화 제휴 혜택
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="icon"></div>
+                                            <strong>포인트전환</strong>
+                                            <p>
+                                                포인트 전환이 가능한 
+                                                <br>
+                                                제휴사가 어디지?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mockup">
+                                    <img src="images/collect/img_enjoy_part1_inner1.png" alt class="imgInner1">
+                                    <img src="images/collect/img_enjoy_mockup1.png" alt class="imgMockup1">
+                                    <ul class="list">
+                                        <li class="list1 active">게임</li>
+                                        <li class="list2">혜택</li>
+                                        <li class="list3">소통</li>
+                                        <li class="list4">충전</li>
+                                        <li class="list5">제휴</li>
+                                    </ul>
+                                </div>
+                            <!-- //swiper slide -->
+                        </div>
+                        <h3 class="title1">
+                            숨어있는 <strong>포인트 전환</strong>부터
+                            <br>
+                            매일매일 쌓이는 <strong>포인트 플레이</strong>
+                        </h3>
+                    </div>
+                </section>
+                <section class="part part2">
+                    <div class="layout1">
+                        <div class="inner">
+                            <div class="txtBox">
+                                <h4 class="title2">
+                                    <strong>100% 당첨 돌려돌려</strong>
+                                    <br>
+                                    <strong class="cBlue">출첵룰렛</strong>
+                                </h4>
+                                <p class="desc1">
+                                    꽝 없는 출첵룰렛 돌리고 포인트와
+                                    <br>
+                                    알파벳 획득해보세요.
+                                </p>
+                                <a href="#" class="goBtn">룰렛 돌리러 GO!</a>
+                            </div>
+                            <div class="imgBox">
+                                <div class="fixImg">
+                                    <img src="images/collect/img_enjoy_frame1.png" alt class="imgFrame1">
+                                </div>
+                                <div class="changeImg">
+                                    <img src="images/collect/img_enjoy_part2_rotate.png" alt class="imgRotate">
+                                    <img src="images/collect/img_enjoy_part2_start.png" alt class="imgStart">
+                                    <img src="images/collect/img_enjoy_part2_win.png" alt class="imgWin">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="part part3">
+                    <div class="layout1">
+                        <div class="inner">
+                            <div class="txtBox">
+                                <h4 class="title2">
+                                    <strong>조합하고 완성하는 재미</strong>
+                                    <br>
+                                    <strong class="cBlue">알파벳</strong>
+                                </h4>
+                                <p class="desc1">
+                                    미션에 도전할 단어를 선택한 후, 알파벳 완성하기
+                                    <br>
+                                    버튼을 선택하고 단어를 완성하세요.
+                                </p>
+                                <a href="#" class="goBtn">알파벳 완성 GO!</a>
+                            </div>
+                            <div class="imgBox">
+                                <div class="fixImg">
+                                    <img src="images/collect/img_enjoy_mockup2.png" alt class="imgMockup2">
+                                    <img src="images/collect/img_enjoy_part3_inner1.png" alt class="imgInner1">
+                                </div>
+                                <div class="changeImg">
+                                    <img src="images/collect/img_enjoy_part3_1.png" alt class="imgChange1">
+                                    <img src="images/collect/img_enjoy_part3_2.png" alt class="imgChange2">
+                                    <img src="images/collect/img_enjoy_part3_3.png" alt class="imgChange3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="part part4">
+                    <div class="layout1">
+                        <div class="inner">
+                            <div class="txtBox">
+                                <h4 class="title2">
+                                    <strong>열심히 걷고 달리자!</strong>
+                                    <br>
+                                    <strong class="cBlue">포인트워크</strong>
+                                </h4>
+                                <p class="desc1">
+                                    귀여운 캐릭터에 매일 간식 주고, 걷기 미션을
+                                    <br>
+                                    완료하면 최대 50젤리 받을 수 있어요!
+                                    <br>
+                                    출석 혜택은 매월 새로 시작합니다.
+                                </p>
+                                <a href="#" class="goBtn">걸으러 GO!</a>
+                            </div>
+                            <div class="imgBox">
+                                <div class="fixImg">
+                                    <img src="images/collect/img_enjoy_mockup2.png" alt class="imgMockup2">
+                                </div>
+                                <div class="changeImg">
+                                    <img src="images/collect/img_enjoy_part4_2024_1.png" alt class="imgChange1">
+                                    <img src="images/collect/img_enjoy_part4_2024_2.png" alt class="imgChange2">
+                                    <img src="images/collect/img_enjoy_part4_2024_3.png" alt class="imgChange3">
+                                    <img src="images/collect/img_enjoy_part4_2024_4.png" alt class="imgChange4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="part part5">
+                    <div class="layout1">
+                        <div class="inner">
+                            <div class="txtBox">
+                                <h4 class="title2">
+                                    <strong>매일매일 달라지는</strong>
+                                    <br>
+                                    <strong class="cBlue">오늘의 퀴즈</strong>
+                                </h4>
+                                <p class="desc1">
+                                    누구나 쉽게 풀 수 있는 간단한 퀴즈 풀고
+                                    <br>
+                                    포인트 받는 일석이조!
+                                </p>
+                                <a href="#" class="goBtn">퀴즈 풀러 GO!</a>
+                            </div>
+                            <div class="imgBox">
+                                <div class="fixImg">
+                                    <img src="images/collect/img_enjoy_part5_1.png" alt class="imgFix">
+                                </div>
+                                <div class="changeImg">
+                                    <img src="images/collect/img_enjoy_part5_2.png" alt class="imgChange1">
+                                    <img src="images/collect/img_enjoy_part5_3.png" alt class="imgChange2">
+                                    <img src="images/collect/img_enjoy_part5_4.png" alt class="imgChange3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="part part6">
+                    <div class="layout1">
+                        <div class="inner">
+                            <div class="txtBox">
+                                <h4 class="title2">
+                                    <strong>설문에 체크체크</strong>
+                                    <br>
+                                    <strong class="cBlue">H.설문</strong>
+                                </h4>
+                                <p class="desc1">
+                                    각자의 취향과 의견을 말해주세요!
+                                    <br>
+                                    간단한 설문에 참여하면 혜택이 팡팡!
+                                </p>
+                                <a href="#" class="goBtn">설문하러 GO!</a>
+                            </div>
+                            <div class="imgBox">
+                                <div class="fixImg">
+                                    <img src="images/collect/img_enjoy_mockup2.png" alt class="imgMockup2">
+                                    <img src="images/collect/img_enjoy_part6_inner1.png" alt class="imgInner1">
+                                </div>
+                                <div class="changeImg">
+                                    <div class="move">
+                                        <img src="images/collect/img_enjoy_part6_1.png" alt class="imgChange1">
+                                        <img src="images/collect/img_enjoy_part6_2.png" alt class="imgChange2">
+                                        <img src="images/collect/img_enjoy_part6_3.png" alt class="imgChange3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="part part7">
+                    <div class="layout1">
+                        <div class="inner">
+                            <div class="txtBox">
+                                <h4 class="title2">
+                                    <strong>의견 나누고 공유하는</strong>
+                                    <br>
+                                    <strong class="cBlue">H.톡톡</strong>
+                                </h4>
+                                <p class="desc1">
+                                    매월 새롭게 등록되는 주제에 댓글과 이미지를
+                                    <br>
+                                    공유하고 포인트를 획득해보세요.
+                                </p>
+                                <a href="#" class="goBtn">의견 남기러 GO!</a>
+                            </div>
+                            <div class="imgBox">
+                                <div class="fixImg">
+                                    <img src="images/collect/img_enjoy_mockup3.png" alt class="imgMockup3">
+                                </div>
+                                <div class="changeImg">
+                                    <img src="images/collect/img_enjoy_part7_1.png" alt class="imgChange1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="quickNav">
+            <div class="quickBtn">Quick</div>
+            <ul class="quickMenu">
+                <li class="join"><a href="#">Join</a></li>
+                <li class="app"><a href="#">앱다운</a></li>
+                <li class="event"><a href="#">이벤트</a></li>
+                <li class="customer"><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+
+        <button type="button" class="pageTop" aria-label="페이지 상단 이동"></button>
+
+        <footer>
+            <div class="layout1">
+                <div class="inner">
+                    <div class="logo">
+                        <span class="sr-only">H.Point</span>
+                    </div>
+                    <ul class="ftMenu">
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">위치기반서비스 이용약관</a>
+                        </li>
+                        <li class="emp">
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li class="empCenter mbHide">
+                            <a href="#">개인정보보호센터</a>
+                        </li>
+                    </ul>
+                    <div class="ftInfo">
+                        <p>주식회사 현대백화점</p>
+                        <p>서울시 강남구 테헤란로98길 12</p>
+                        <p>고객센터
+                            <a href="tel:18002800" class="tel">1800-2800</a>
+                        </p>
+                    </div>
+                    <p class="copyLight">ⓒ HYUNDAI DEPARTMENT STORE GROUP Co. Ltd. ALL RIGHTS RESERVED</p>
+                    <ul class="ftSns">
+                        <li><a href="#" target="_blank"><img src="images/collect/ft_sns_youtube.png" alt="유튜브"></a></li>
+                        <li><a href="#" target="_blank"><img src="images/collect/ft_sns_kakao.png" alt="카카오플러스"></a></li>
+                        <li><a href="#" target="_blank"><img src="images/collect/ft_sns_instagram.png" alt="인스타그램"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+{
+    "login" : "Login",
+    "signUp" : "Sign Up",
+    "easyText" : ",easily and comfortably",
+    "pointText" : "Enjoy shopping benefits.",
+    "appText" : "Everything about Points! Download the H.Point app now",
+    "mbGnb" : [
+        {
+            "depth1" : "About",
+            "children" : [
+                { "depth2" : "About H.Point", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "Where to use",
+            "children" : [
+                { "depth2" : "Shopping", "link" : "#" },
+                { "depth2" : "Food", "link" : "#" },
+                { "depth2" : "Living", "link" : "#" },
+                { "depth2" : "Fashion", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "Benefits",
+            "children" : [
+                { "depth2" : "Events", "link" : "#" },
+                { "depth2" : "Coupons", "link" : "#" },
+                { "depth2" : "Plus Points", "link" : "#" },
+                { "depth2" : "Missions", "link" : "#" }
+            ]
+        },
+        {
+            "depth1" : "Customer Center",
+            "children" : [
+                { "depth2" : "Notice", "link" : "#" },
+                { "depth2" : "FAQ", "link" : "#" },
+                { "depth2" : "1:1 Inquiries", "link" : "#" }
+            ]
+        }
+    ]
+}
