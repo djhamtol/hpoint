@@ -47,14 +47,9 @@ header .mbUtil {
 }
 
 header .mbUtil li a {
-    font-family: 'HGGGothicssi';
     font-weight: 600;
     font-size: 12px;
     color: #111;
-}
-
-body.cn header .mbUtil li a {
-    font-family: "Noto Sans SC", sans-serif !important;
 }
 
 .hambugerMenu {
@@ -169,15 +164,10 @@ body.cn header .mbUtil li a {
 }
 
 #mbMenuArea .topArea .mbUtil li a {
-    font-family: "Noto Sans KR";
     font-weight: 500;
     font-size: 13px;
     color: #111;
     letter-spacing: -0.8px;
-}
-
-body.cn #mbMenuArea .topArea .mbUtil li a {
-    font-family: "Noto Sans SC", sans-serif !important;
 }
 
 #mbMenuArea .topArea .mbUtil li a.appDown {
@@ -212,19 +202,13 @@ body.cn #mbMenuArea .topArea .mbUtil li a {
 #mbMenuArea .myArea {
     margin-top: 20px;
     padding: 0 20px;
-    font-family: "Noto Sans KR";
     font-weight: 400;
     font-size: 16px;
     color: #111;
     letter-spacing: -0.8px;
 }
 
-body.cn #mbMenuArea .myArea {
-    font-family: "Noto Sans SC", sans-serif !important;
-}
-
 #mbMenuArea .myArea a, #mbMenuArea .myArea span {
-    font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit;
@@ -249,7 +233,6 @@ body.cn #mbMenuArea .myArea {
 #mbMenuArea .appArea a p {
     display: inline-block;
     padding: 9px 55px 9px 0;
-    font-family: "Noto Sans KR";
     font-weight: 500;
     font-size: 13px;
     color: #111;
@@ -260,10 +243,6 @@ body.cn #mbMenuArea .myArea {
     background-size: 30px;
     background-position: right center;
     letter-spacing: inherit;
-}
-
-body.cn #mbMenuArea .appArea a p {
-    font-family: "Noto Sans SC", sans-serif !important;
 }
 
 #mbMenuArea #mbGnb {
@@ -281,15 +260,10 @@ body.cn #mbMenuArea .appArea a p {
 
 #mbMenuArea #mbGnb > ul > li.depth1 span {
     position: relative;
-    font-family: "HGGGothicssi";
     font-weight: 800;
     font-size: 20px;
     color: #111;
     letter-spacing: inherit;
-}
-
-body.cn #mbMenuArea #mbGnb > ul > li.depth1 span {
-    font-family: "Noto Sans SC", sans-serif !important;
 }
 
 #mbMenuArea #mbGnb > ul > li.depth1.active span {
@@ -324,15 +298,10 @@ body.cn #mbMenuArea #mbGnb > ul > li.depth1 span {
 }
 
 #mbMenuArea #mbGnb ul.depth2 > li a {
-    font-family: "Noto Sans KR";
     font-weight: 400;
     font-size: 16px;
     color: #111;
     letter-spacing: -0.8px;
-}
-
-body.cn #mbMenuArea #mbGnb ul.depth2 > li a {
-    font-family: "Noto Sans SC", sans-serif !important;
 }
 
 .mbDim {
@@ -361,14 +330,12 @@ main {
 }
 
 .pageTitle .title  {
-    font-family: "HGGGothicssi";
     font-weight: 800;
     font-size: 30px;
     line-height: 0.9;
 }
 
 .pageTitle p {
-    font-family: "Noto Sans KR";
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
@@ -645,7 +612,6 @@ main {
 .part1 .playSwiper strong {
     display: block;
     margin-top: 16px;
-    font-family: "HGGGothicssi";
     font-weight: 600;
     font-size: 14px;
     color: #999;
@@ -653,7 +619,6 @@ main {
 
 .part1 .playSwiper p {
     margin-top: 6px;
-    font-family: "HGGGothicssi";
     font-weight: 400;
     font-size: 9px;
     line-height: 1.5;
@@ -701,7 +666,6 @@ main {
 
 .part1 .mockup .list li {
     position: relative;
-    font-family: "HGGGothicssi";
     font-weight: 600;
     font-size: 6px;
     color: #999;
@@ -733,7 +697,6 @@ main {
 
 .part1 .title1 {
     text-align: center;
-    font-family: "HGGGothicssi";
     font-weight: 400;
     font-size: 20px;
     color: #111;
@@ -742,7 +705,6 @@ main {
 }
 
 .part1 .title1 strong {
-    font-family: inherit;
     font-size: inherit;
     line-height: inherit;
     letter-spacing: inherit;
@@ -766,7 +728,6 @@ main {
 }
 
 .enjoyWrap h4.title2 {
-    font-family: "HGGGothicssi";
     font-weight: 800;
     font-size: 28px;
     color: #111;
@@ -775,7 +736,6 @@ main {
 
 .enjoyWrap h4.title2 strong {
     display: inline-block;
-    font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit;
@@ -787,7 +747,6 @@ main {
 }
 
 .enjoyWrap .desc1 {
-    font-family: "Noto Sans KR";
     font-weight: 400;
     font-size: 14px;
     color: #333;
@@ -797,7 +756,6 @@ main {
 }
 
 .enjoyWrap .goBtn {
-    font-family: "HGGGothicssi";
     font-weight: 400;
     font-size: 12px;
     color: #4e2bf4;
@@ -1123,7 +1081,6 @@ main {
     background-size: 12px;
     background-position: center 10px;
 
-    font-family: "Noto Sans KR";
     font-size: 10px;
     font-weight: 400;
     color: #fff;
@@ -1144,7 +1101,6 @@ main {
     width: 43px;
     height: 43px;
     padding-top: 27px;
-    font-family: "Noto Sans KR";
     font-size: 10px;
     font-weight: 400;
     color: #444;
@@ -1222,7 +1178,6 @@ footer .ftMenu {
 }
 
 footer .ftMenu li a {
-    font-family: "Noto Sans KR";
     font-size: 12px;
     font-weight: 400;
     color: #333;
@@ -1242,7 +1197,6 @@ footer .ftInfo {
 footer .ftInfo p {
     position: relative;
     padding-right: 7px;
-    font-family: "Noto Sans KR";
     font-size: 11px;
     font-weight: 400;
     color: #767676;
@@ -1271,7 +1225,6 @@ footer .ftInfo p .tel {
 
 footer .copyLight {
     margin-top: 10px;
-    font-family: "Noto Sans KR";
     font-size: 11px;
     font-weight: 400;
     color: #767676;
@@ -1539,7 +1492,6 @@ footer .ftSns {
     }
 
     header .pcUtil li a {
-        font-family: "Noto Sans KR";
         font-weight: 400;
         font-size: 13px;
         color: #767676;
@@ -1576,7 +1528,6 @@ footer .ftSns {
     }
 
     header .global .gloDrop li {
-        font-family: "Noto Sans KR";
         font-weight: 400;
         font-size: 13px;
         color: #767676;
@@ -1628,7 +1579,6 @@ footer .ftSns {
     }
 
     #pcGnb > ul > li .depth1 {
-        font-family: "HGGGothicssi";
         font-weight: 600;
         font-size: 22px;
         color: #111;
@@ -1674,7 +1624,6 @@ footer .ftSns {
     }
 
     #pcGnb .depth2 li a {
-        font-family: "Noto Sans KR";
         font-weight: 500;
         font-size: 16px;
         color: #111;
