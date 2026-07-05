@@ -616,7 +616,7 @@ main {
     margin-top: 16px;
     font-weight: 600;
     font-size: 14px;
-    color: #999;
+    color: #767676;
 }
 
 .part1 .playSwiper p {
@@ -624,7 +624,7 @@ main {
     font-weight: 400;
     font-size: 9px;
     line-height: 1.5;
-    color: #999;
+    color: #767676;
 }
 
 .part1 .playSwiper .swiper-slide-active strong , 
@@ -670,7 +670,7 @@ main {
     position: relative;
     font-weight: 600;
     font-size: 6px;
-    color: #999;
+    color: #767676;
     padding-left: 5px;
     margin-right: 2.5%;
     transition: color .3s;
